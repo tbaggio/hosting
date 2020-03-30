@@ -1,0 +1,8 @@
+---
+- name: Intallation de Mongodb
+  apt:
+    update_cache: yes
+    pkg:
+      - mongodb
+
+...

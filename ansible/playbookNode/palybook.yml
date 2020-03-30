@@ -1,0 +1,10 @@
+---
+- name:  Installation de Apache
+  hosts: New
+  remote_user: root
+  vars:
+    user: apache
+
+  roles:
+    - Node
+...

@@ -1,0 +1,9 @@
+---
+- name:  Installation de Python
+  hosts: New
+  remote_user: root
+
+
+  roles:
+    - python
+...

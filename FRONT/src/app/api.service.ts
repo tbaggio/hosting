@@ -1,0 +1,16 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+
+@Injectable({
+  providedIn: 'root'
+})
+
+export class ConfigService {
+  constructor(private http: HttpClient) { }
+
+  UsersUrl = 'localhost/users';
+
+  getUsers() {
+    return this.http.get(this.UsersUrl);
+  }
+}

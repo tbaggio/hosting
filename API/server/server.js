@@ -14,7 +14,7 @@ const app = express();
 
 const PORT = process.env.PORT || 3000;
 
-mongoose.connect('mongodb+srv://root:toor@cluster0-5twos.azure.mongodb.net/hosting', { useNewUrlParser: true }).then(() => {
+mongoose.connect('mongodb+srv://root:toor@cluster0-5twos.azure.mongodb.net/hosting', { useNewUrlParser: true, useFindAndModify: false  }).then(() => {
   console.log('Connected to the Database successfully');
 });
 

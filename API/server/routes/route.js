@@ -4,13 +4,12 @@ const userController = require('../controllers/userController');
 const serviceController = require('../controllers/serviceController');
 const serverController = require('../controllers/serverController');
 
-router.post('/service/deploy', userController.allowIfLoggedin, serviceController.deployService );
+router.get('/service/deploy/:vmID', userController.allowIfLoggedin, serviceController.deployService );
 
-router.get('/one/version', serverController.getVersion);
-router.post('/one/reboot', serverController.getVersion);
-router.post('/one/version', serverController.getVersion);
-router.post('/one/version', serverController.getVersion);
-router.post('/one/version', serverController.getVersion);
+router.get( '/one/version', serverController.getVersion);
+router.get('/one/infos/:vmID', serverController.getInfos);
+router.get('/one/reboot/:vmID', serverController.reboot);
+router.get('/one/create', serverController.create);
 
 router.post('/signup', userController.signup);
 router.post('/login', userController.login);

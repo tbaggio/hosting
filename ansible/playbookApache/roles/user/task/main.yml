@@ -4,7 +4,7 @@
   user:
     name: "{{ user }}"
     comment: "Mon user"
-    shell: /usr/bin/zsh
+    shell: /usr/bin/bash
 
 - name: Ajout de la clef SSH
   when: user is defined
@@ -14,7 +14,7 @@
 
 - name: "{{ user }} devient sudoers"
   when: user is defined
-  template: 
+  template:
     src: templates/sudoers.j2
     dest: /etc/sudoers.d/{{ user }}-sudoer
     validate: 'visudo -cf %s'

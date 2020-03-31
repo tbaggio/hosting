@@ -1,0 +1,6 @@
+---
+- name: Installation de Angular
+  npm:
+    name: "@angular/cli"
+    global: yes
+...

@@ -2,6 +2,15 @@
 
 **OpenHosting** is an open-source project used to create fastly your own hosting service.
 
+## How it Works ?
+
+**OpenHostingAPI** can :
+- Manage **VMs** with OpenNebula (CREATE UPDATE DELETE READ)
+- Deploy **services** on VMs with Ansible
+- Manage **Users** (CREATE UPDATE DELETE READ)
+- Secure **authentification** (JWT)
+- Manage **Group & Roles** for Users
+
 ### API Requirements
 - Open Nebula 5
 - Ansible

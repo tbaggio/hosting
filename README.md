@@ -1,7 +1,4 @@
-# OpenHosting
-
-**OpenHosting** is an open-source project used to create fastly your own hosting service.
-
+# easyHosting
 ## How it Works ?
 
 **OpenHostingAPI** can :

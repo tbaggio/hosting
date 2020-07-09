@@ -1,6 +1,5 @@
 # easyHosting
 
-### How it Works ?
 **OpenHostingAPI** can :
 - Manage **VMs** with OpenNebula (CREATE UPDATE DELETE READ)
 - Deploy **services** on VMs with Ansible
